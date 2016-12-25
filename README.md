@@ -13,8 +13,6 @@ in Internet Explorer on Windows 7 for instance (because of the wrong MIME type).
 
 ## Usage
 
-Create session cookie:
-
 ```javascript
 $.responsiveCollapse('.navbar-nav');
 ```
