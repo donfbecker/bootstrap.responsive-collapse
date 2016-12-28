@@ -5,7 +5,7 @@ A jQuery plugin for partially collapsing Bootstrap navbars.
 Include script *after* the jQuery library (unless you are packaging scripts somehow else):
 
 ```html
-<script src="/path/to/jquery.responsive-collapse.js"></script>
+<script src="/path/to/bootstrap.responsive-collapse.js"></script>
 ```
 
 **Do not include the script directly from GitHub (http://raw.github.com/...).** The file is being served as text/plain and as such being blocked
