@@ -18,7 +18,7 @@
 
 			function reset() {
 				var child = $(overflowList).children();
-				var count = child.size();
+				var count = child.length;
 				if (count > 0) {
 					for (var i = 0; i < count; i++) {
 						$(child[i]).insertBefore($list.children(':last-child'));
@@ -30,7 +30,7 @@
 			function grow() {
 				var overflowWidth = $(overflowItem).width();
 				var child         = $(overflowList).children();
-				var count         = child.size();
+				var count         = child.length;
 
 				if (count > 0) {
 					for (var i = 0; i < count; i++) {
@@ -45,7 +45,7 @@
 				}
 
 				// Hide the overflow item if it has no children
-				if($(overflowList).children().size() == 0) {
+				if($(overflowList).children().length == 0) {
 					$(overflowItem).addClass('hide');
 				}
 
@@ -54,7 +54,7 @@
 
 			function shrink() {
 				var child = $list.children(':not(:last-child)');
-				var count = child.size();
+				var count = child.length;
 				if (count < 1) return;
 
 				// show the overflow link in case it's been hidden
