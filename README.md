@@ -14,13 +14,13 @@ in Internet Explorer on Windows 7 for instance (because of the wrong MIME type).
 ## Usage
 
 ```javascript
-$.responsiveCollapse('.navbar-nav');
+$('.navbar-nav').responsiveCollapse();
 ```
 
 ## Customization
 
 ```javascript
-$.responsiveCollapse('.navbar-nav', {
+$('.navbar-nav').responsiveCollapse({
 	// Bootstraps xs breakpoint
 	breakPoint: 768,
 
