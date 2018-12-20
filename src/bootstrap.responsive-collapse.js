@@ -14,7 +14,7 @@
 			var overflowList = $(overflowItem).find('ul.dropdown-menu');
 
 			var thisWidth    = $list.outerWidth();
-			var maxWidth     = $(container).width() - $(container).find('.navbar-header').width();
+			var maxWidth     = $(container).width() - ($(container).find('.navbar-header').width() || 0);
 
 			function reset() {
 				var child = $(overflowList).children();
@@ -72,7 +72,7 @@
 
 			function refresh() {
 				thisWidth = $list.outerWidth();
-				maxWidth  = $(container).width() - $(container).find('.navbar-header').width();
+				maxWidth  = $(container).width() - ($(container).find('.navbar-header').width() || 0);
 				var docWidth  = $(document).width();
 
 				if ($(window).width() < settings.breakPoint) {
